@@ -22,3 +22,22 @@ body{
 .producto :nth-child(2){
     font-style: italic;
 }
+.producto:not(.destacado):hover{
+    cursor: pointer;
+    background-color: aqua;
+
+}
+button:disabled{
+    background-color: #999;
+    color: white;
+    cursor: not-allowed;
+}
+/*checkbox marcado */
+input[type="checkbox"]:checked{
+    outline: 2px solid green;
+}
+/*checkbox desactivado*/
+input[type="checkbox"]:disabled + label{
+    color: #888;
+
+}
